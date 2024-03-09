@@ -17,6 +17,9 @@ vim.opt.shiftwidth = 2
 vim.opt.splitbelow = true
 vim.opt.splitright = true
 
+-- Show which line your cursor is on
+vim.opt.cursorline = true
+
 vim.opt.nu = true
 vim.opt.relativenumber = true
 
@@ -44,12 +47,18 @@ vim.opt.signcolumn = "auto"
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex) -- open Netrw with "leader + pv" (while in normal mode)
 
 vim.keymap.set("i", "jk", "<ESC>", { noremap = true, silent = true })
-vim.keymap.set("n", "<leader>h", ":noh<CR>", { noremap = true, silent = true })
+vim.keymap.set("n", "<leader>h", ":noh<CR>", { noremap = true, silent = true, desc = "Stop highlighting" })
 
 vim.keymap.set("n", "<C-h>", "<C-w>h", { noremap = true, silent = true })
 vim.keymap.set("n", "<C-j>", "<C-w>j", { noremap = true, silent = true })
 vim.keymap.set("n", "<C-k>", "<C-w>k", { noremap = true, silent = true })
 vim.keymap.set("n", "<C-l>", "<C-w>l", { noremap = true, silent = true })
+
+-- Use alt + h,j,k,l to resize windows
+vim.keymap.set('n', '<M-j>', ':resize -2<CR>', { noremap = true, silent = true })
+vim.keymap.set('n', '<M-k>', ':resize +2<CR>', { noremap = true, silent = true })
+vim.keymap.set('n', '<M-h>', ':vertical resize -2<CR>', { noremap = true, silent = true })
+vim.keymap.set('n', '<M-l>', ':vertical resize +2<CR>', { noremap = true, silent = true })
 
 -----------------------------------------------------------------------------------------
 -- VimWiki
