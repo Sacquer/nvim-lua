@@ -72,6 +72,11 @@ vim.g.vimwiki_ext2syntax = { [".md"] = "markdown", [".markdown"] = "markdown", [
 -- Makes vimwiki markdown linkas as [text](text.md) instead of [text](text)
 vim.g.vimwiki_markdown_link_ext = 1
 
+-----------------------------------------------------------------------------------------
+-- vim-floaterm
+-----------------------------------------------------------------------------------------
 
+vim.g.floaterm_width = 0.95
+vim.g.floaterm_height = 0.95
 
 

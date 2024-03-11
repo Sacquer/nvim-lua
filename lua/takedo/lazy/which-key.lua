@@ -42,6 +42,7 @@ return {
 				g = {
 					name = "git",
 					c = { "<cmd>Telescope git_branches<cr>", "Git Branches" },
+					g = { "<cmd>FloatermNew lazygit<cr>", "Lazygit" },
 				},
 				c = {
 					name = "code",
