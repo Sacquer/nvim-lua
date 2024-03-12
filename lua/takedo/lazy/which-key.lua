@@ -52,6 +52,7 @@ return {
 						end,
 						"Format",
 					},
+					t = { "<cmd>:CloakToggle<cr>", "Cloak Toggle" },
 				},
 			},
 		})
