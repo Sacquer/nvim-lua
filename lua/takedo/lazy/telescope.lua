@@ -81,6 +81,8 @@ return {
         builtin.resume({ desc = "Resume " })
       end)
 
+      vim.keymap.set("n", "<leader>fb", "<cmd>Telescope buffers sort_mru=true sort_lastused=true<cr>")
+
       vim.keymap.set("n", "<leader>sd", function()
         builtin.diagnostics({ desc = '[S]earch [D]iagnostics' })
       end)
@@ -91,6 +93,10 @@ return {
 
       vim.keymap.set("n", "<leader>gw", function()
         builtin.git_worktree({})
+      end)
+
+      vim.keymap.set("n", "<leader>sk", function()
+        builtin.keymaps()
       end)
 
       vim.keymap.set("n", "<leader>vh", builtin.help_tags, {})
